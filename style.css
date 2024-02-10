@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+
+	text-decoration: none;
+	list-style: none;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8%;
+	box-shadow: 0 5px 10px #000;
+	background-color: rgba(130, 168, 171, 0.55);
+}
+
+header .logo{
+	font-size: 40px;
+	font-weight: 900;
+	color: black;
+}
+header .logo:hover{
+	transform: scale(1.2);
+}
+header nav ul li{
+	position: relative;
+	float: left;
+}
+header nav ul li a{
+	padding: 15px;
+	color: black;
+	font-size: 30px;
+	display: block;
+	font-family: "Arial";
+
+}
+header nav ul li a:hover{
+	background: rgba(127, 175, 181, 0.58);
+	color: white;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	background-image: url(Background.PNG);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text-main{
+	position: relative;
+	text-align: center;
+	top: 25%;
+	color: #fff;
+}
+
+.main h1{
+	font-size: 50px;
+	font-family: "Arial";
+}
+
+.main div{
+	font-size: 30px;
+	font-family: "Arial";
+	color: black;
+
+}
+
+.main button{
+	font-size: 50px;
+	font-family: "Arial";
+	border-radius: 10px;
+	margin: 50px;
+	border: 0;
+	background: #008A83;
+
+}
+.main button:hover {
+	background: #1FC77F;
+	color: #000000;
+	box-shadow: inset 0 0 0 5px #008F18;
+}
+
+
+
+
+
+/*ЗАГРУЗКА САЙТА*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-color: lightblue;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+/*ЗАГРУЗКА САЙТА*/
