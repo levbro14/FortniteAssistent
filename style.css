@@ -89,6 +89,26 @@ header nav ul li a:hover{
 
 
 
+.links a.discord{
+	position: fixed;
+	top: 88%;
+	margin: 25px;
+
+
+}
+
+.links a.youtube{
+	position: fixed;
+	top: 88%;
+	margin: 25px;
+	left: 55px;
+
+}
+
+
+.links a:hover{
+	transform: scale(1.2);
+}
 
 
 /*ЗАГРУЗКА САЙТА*/
